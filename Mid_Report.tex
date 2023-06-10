@@ -39,9 +39,9 @@ $$ C_{D}(v) = deg(v) $$
 
 Time complexity: Calculating the degree centrality for all nodes in a graph, it takes $\Theta(V^{2})$ time in a dense adjacency matrix and for edges, $\Theta(E)$ time in a sparse matrix representation.
 
-Let $X(Y,Z)$ be the $|Y|$ node connected graph that maximizes the following quantity (where $y*$ is node with highest degree centrality in $|X|$:
+Let $X(Y,Z)$ be the $|Y|$ node connected graph, with $|Y|$ vertices and $|Z|$ edges, that maximizes the following quantity (where $y*$ is node with highest degree centrality in $|X|$:
 
-$$ H = \sum_{j = 1}^{|Y|} [C_{D}(v*) - C_{D}(y_{j})]$$
+$$ H = \sum_{j = 1}^{|Y|} [C_{D}(y*) - C_{D}(y_{j})]$$
 
 So, the degree centrality of the graph $G$ will be:
 
